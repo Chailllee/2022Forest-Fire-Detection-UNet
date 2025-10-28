@@ -1,0 +1,105 @@
+;自定义影像滑动窗口
+;row 影像行数
+;col 影像列数
+;wz 滑动窗口的大小
+;dim 滑动方向的维度 1代表沿列方向(上下) 2代表沿行方向(左右)
+
+function image_slide, cols, rows, wz, dim = dim, step
+  compile_opt idl2
+  param_number = n_params()
+  if param_number eq 3 and (dim eq 1 or dim eq 2) then begin
+
+    rows = rows
+    cols = cols
+    wz = wz
+;    step = 1
+
+    if wz gt rows or wz gt cols then begin
+      print, 'WindowSize ge imageSize'
+      return, 0
+    endif
+
+    case 1 of
+      dim eq 1 : begin
+        row_num = floor((rows - wz) / step) + 1
+        col_num = floor(cols / wz) + 1            ; 行列方向的窗口个数
+        slide_data = intarr(4, row_num * col_num) ; 用于存放滑动窗口在影像的左上右下列行坐标
+        counts = row_num * col_num                ; 记录窗口的数量
+
+        num = 0                                   ; 计数器 逐行写入数组
+        for i = 0, (col_num * wz - 1), wz do begin    ; 沿列方向进行滑动, 列之间的窗口无重叠  -1是为了防止i溢出列数
+          for j = 0, (rows - wz), step do begin
+            slide_data[0, num] = i               ; 左上列坐标
+            slide_data[1, num] = j
+            slide_data[2, num] = i + wz - 1      ; 右下列坐标
+            slide_data[3, num] = j + wz - 1
+
+            max_col = i + wz - 1
+            max_row = j + wz - 1
+            if max_col ge cols and max_row lt rows then begin      ; 对不满足一个窗口大小的列边缘像素进行反向取窗口
+              slide_data[0, num] = cols - wz    ; 左上列坐标
+              slide_data[1, num] = j
+              slide_data[2, num] = cols - 1     ; 右下列坐标
+              slide_data[3, num] = j + wz - 1
+            endif
+            if max_row ge rows and max_col lt cols then begin
+              slide_data[3, num] = rows - 1
+              slide_data[1, num] = rows - wz
+            endif
+            if max_col ge cols and max_row ge rows then begin      ; 对不满足一个窗口大小的列边缘像素进行反向取窗口
+              slide_data[0, num] = cols - wz    ; 左上列坐标
+              slide_data[1, num] = rows - wz
+              slide_data[2, num] = cols - 1     ; 右下列坐标
+              slide_data[3, num] = rows - 1
+            endif
+            num = num + 1
+          endfor
+        endfor
+      end
+      dim eq 2 : begin
+        col_num = floor((cols - wz) / step) + 1
+        row_num = floor(rows / wz) + 1             ; 行列方向的窗口个数
+        slide_data = intarr(4, row_num * col_num)  ; 用于存放滑动窗口在影像的左上右下列行坐标
+        counts = row_num * col_num                 ; 记录窗口的数量
+
+        num = 0                                    ; 计数器 逐行写入数组
+        for i = 0, (row_num * wz - 1), wz do begin
+          for j = 0, (cols - wz), step do begin
+            slide_data[0, num] = j                 ; 左上列坐标
+            slide_data[1, num] = i
+            slide_data[2, num] = j + wz - 1        ; 右下列坐标
+            slide_data[3, num] = i + wz - 1
+            ;print,j
+
+            max_col = j + wz - 1
+            max_row = i + wz - 1
+
+            if max_col ge cols and max_row lt rows then begin      ; 对不满足一个窗口大小的列边缘像素进行反向取窗口
+              slide_data[0, num] = rows - wz      ; 左上列坐标
+              slide_data[1, num] = i
+              slide_data[2, num] = rows - 1       ; 右下列坐标
+              slide_data[3, num] = i + wz - 1
+            endif
+            if max_row ge rows and max_col lt cols then begin
+              slide_data[3, num] = rows - 1
+              slide_data[1, num] = rows - wz
+            endif
+            if max_col ge cols and max_row gt rows then begin      ; 对不满足一个窗口大小的列边缘像素进行反向取窗口
+              slide_data[0, num] = rows - wz      ; 左上列坐标
+              slide_data[1, num] = cols - wz
+              slide_data[2, num] = rows - 1       ; 右下列坐标
+              slide_data[3, num] = cols - 1
+            endif
+            num = num + 1
+          endfor
+        endfor
+      end
+    endcase
+    return, slide_data
+
+  endif else begin
+    print, 'Please check Function params'
+    return, 0
+  endelse
+
+end

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window height="1096" width="1874" x="-8" y="-8">
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.debug.ui.DebugView"/>
+</fastViewData>
+<perspectiveBar>
+<itemSize x="0"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="211" y="56"/>
+<coolItem id="com.rsi.idldt.ui.textedit.toolbar" itemType="typeToolBarContribution" x="288" y="56"/>
+<coolItem id="com.rsi.idldt.ui.toolbar.debugTools" itemType="typeToolBarContribution" x="458" y="56"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1647355710959" focus="true" label="工作空间 － IDL">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="2"/>
+<part id="3"/>
+<part id="1"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="main_test.pro" partName="main_test.pro" path="F:/Files auto-update/0 Graduation Paper/2Model/Database/20181108_20181116_01_T1/code/main_test.pro" title="main_test.pro" tooltip="20181108_20181116_01_T1/main_test.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/20181108_20181116_01_T1/main_test.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="band_decompose.pro" partName="band_decompose.pro" path="F:/Files auto-update/0 Graduation Paper/2Model/Database/20181108_20181116_01_T1/code/band_decompose.pro" title="band_decompose.pro" tooltip="20181108_20181116_01_T1/band_decompose.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/20181108_20181116_01_T1/band_decompose.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.rsi.idldt.proeditor.ProEditor" name="crop_image.pro" partName="crop_image.pro" path="F:/Files auto-update/0 Graduation Paper/2Model/Database/20181108_20181116_01_T1/code/crop_image.pro" title="crop_image.pro" tooltip="20181108_20181116_01_T1/crop_image.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/20181108_20181116_01_T1/crop_image.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="388" selectionTopPixel="0"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="image_slide.pro" partName="image_slide.pro" path="F:/Files auto-update/0 Graduation Paper/2Model/Database/20181108_20181116_01_T1/code/image_slide.pro" title="image_slide.pro" tooltip="20181108_20181116_01_T1/image_slide.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/20181108_20181116_01_T1/image_slide.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="145" selectionTopPixel="152"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="image.pro" partName="image.pro" title="image.pro" tooltip="D:\Program Files\Exelis\IDL85\lib\graphics\image.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/D:/Program%20Files/Exelis/IDL85/lib/graphics/image.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="171" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="项目资源管理器">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.rsi.idldt.ui.views.CommandHistoryView" partName="历史命令">
+<viewState columnWidth0="200" grp200="1" grp205="1" showTreeView="1" sortColumn="1" sortDirection="128"/>
+</view>
+<view id="com.rsi.idldt.console.IDLConsoleView" partName="IDL控制台">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="调试">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="问题">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="问题">
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="变量查看器">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="大纲">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.rsi.idldt.proeditor.ProEditor" activePerspective="com.rsi.idldt.ui.IDLPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.rsi.idldt.internal.ui.IDLPerspectiveFactory" id="com.rsi.idldt.ui.IDLPerspective" label="IDL"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.CmdLine"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.Run"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.Wizard"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.Help"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.MacroActionSet"/>
+<alwaysOnActionSet id="com.rsi.idldt.tasks.actionSets.Wizard"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="com.rsi.idldt.console.IDLConsoleView"/>
+<view id="com.rsi.idldt.ui.views.CommandHistoryView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<fastViews>
+<view id="org.eclipse.debug.ui.DebugView" ratio="0.3"/>
+</fastViews>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="项目资源管理器"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="大纲"/>
+<page content="org.eclipse.debug.ui.VariableView" label="变量查看器"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="2"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="com.rsi.idldt.HierarchyView" ratio="0.7" ratioLeft="700" ratioRight="300" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.8121665" ratioLeft="761" ratioRight="176" relationship="4" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.14564158" ratioLeft="269" ratioRight="1578" relationship="2" relative="left"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5f637d71" ratio="0.75" ratioLeft="1170" ratioRight="390" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.rsi.idldt.console.IDLConsoleView" appearance="2" expanded="2">
+<page content="com.rsi.idldt.console.IDLConsoleView" label="IDL控制台"/>
+<page content="com.rsi.idldt.ui.views.CommandHistoryView" label="历史命令"/>
+<page content="org.eclipse.ui.views.ProblemView" label="问题"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/20181108_20181116_01_T1/crop_image.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/20181108_20181116_01_T1/image_slide.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/20181108_20181116_01_T1/image_slide.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/20181108_20181116_01_T1/image_slide.pro"/>
+</editors>
+<item historyLabel="image_slide.pro" index="1">
+<position info="not_deleted" x="3712" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="840" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="363" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="208" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="543" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="348" y="32"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="313" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="489" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="313" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="379" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="280" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="313" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="331" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="2">
+<position info="not_deleted" x="0" y="3815"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="619" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="443" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="510" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="515" y="4"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="405" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="515" y="4"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="642" y="5"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="515" y="4"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="642" y="5"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="515" y="4"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="651" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="778" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="842" y="0"/>
+</item>
+<item historyLabel="image_slide.pro" index="3">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="842" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="1116" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="1013" y="0"/>
+</item>
+<item historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="800" y="0"/>
+</item>
+<item active="true" historyLabel="crop_image.pro" index="0">
+<position info="not_deleted" x="1013" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="read_image.pro" tooltip="D:\Program Files\Exelis\IDL85\lib\read_image.pro">
+<persistable uri="file:/D:/Program%20Files/Exelis/IDL85/lib/read_image.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="image_slide.pro" tooltip="test/image_slide.pro">
+<persistable path="/test/image_slide.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="crop_image.pro" tooltip="test/crop_image.pro">
+<persistable path="/test/crop_image.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="band_decompose.pro" tooltip="test/band_decompose.pro">
+<persistable path="/test/band_decompose.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="image_slide.pro" tooltip="20181108_20181116_01_T1/image_slide.pro">
+<persistable path="/20181108_20181116_01_T1/image_slide.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="crop_image.pro" tooltip="20181108_20181116_01_T1/crop_image.pro">
+<persistable path="/20181108_20181116_01_T1/crop_image.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="band_decompose.pro" tooltip="20181108_20181116_01_T1/band_decompose.pro">
+<persistable path="/20181108_20181116_01_T1/band_decompose.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="helloworld.pro" tooltip="F:\Files auto-update\0 Graduation Paper\2Model\Database\20181108_20181116_01_T1\process\helloworld.pro">
+<persistable uri="file:/F:/Files%20auto-update/0%20Graduation%20Paper/2Model/Database/20181108_20181116_01_T1/process/helloworld.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.actions.iopen.runner" name="3.12roi chip.tif" tooltip="F:\Files auto-update\0 Graduation Paper\2Model\Database\20181108_20181116_01_T1\process\3.12roi chip.tif">
+<persistable uri="file:/F:/Files%20auto-update/0%20Graduation%20Paper/2Model/Database/20181108_20181116_01_T1/process/3.12roi%20chip.tif"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.actions.iopen.runner" name="3.10roi chip.tif" tooltip="F:\Files auto-update\0 Graduation Paper\2Model\Database\20181108_20181116_01_T1\process\3.10roi chip.tif">
+<persistable uri="file:/F:/Files%20auto-update/0%20Graduation%20Paper/2Model/Database/20181108_20181116_01_T1/process/3.10roi%20chip.tif"/>
+</file>
+</mruList>
+</workbench>

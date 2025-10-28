@@ -1,0 +1,47 @@
+pro crop_image
+  compile_opt idl2
+
+  img0 = read_image('F:\Files auto-update\0 Graduation Paper\2Model\Database\20181108_20181116_01_T1\process_out\20181108_rgb765.tif')
+  ;3.24.png   4.21rgb432.tif  3.24roi rgb  3.16roi crop
+  ;img_vis = image(img)
+  
+  ;????????
+  img = reform(img0[1,*,*])  ;?????;不应该reform成1维的！！
+  ;????????
+  r = img0[2,*,*]
+  g = img0[1,*,*]
+  b = img0[2,*,*]
+
+  dim = size(img, /dimensions)
+  rows = dim[1]
+  cols = dim[0]
+;  rows = dim[2]
+;  cols = dim[1]
+  
+;   img2=findgen(img[7,*,*])
+  ;img=findgen(img[dim[0],*,*])  
+;  img2=findgen(img[7,dim[0],dim[1]])
+;  img2=findgen(img[dim[0],dim[1],dim[2]])
+  
+  subs = image_slide(cols, rows, 512, dim=1,step=256)  ;step = 256  ;步长
+  counts = n_elements(subs) / 4    ;返回包含的变量数
+  
+
+  for i = 0, counts - 1 do begin
+    sub = subs[*, i]
+    img_out = img0[*,sub[0]:sub[2], sub[1]:sub[3]] ;??????????
+;    img_out = img[sub[dim[0],0]:sub[dim[0],2], sub[dim[0],1]:sub[dim[0],3]] ;??????????
+    
+;    ;????????
+;    img_out=reform(img_out[7,*,*])
+;    ;??????
+    
+    write_jpeg, 'F:\Files auto-update\0 Graduation Paper\2Model\Database\20181108_20181116_01_T1\process\cropping\'+string(i)+'.tif', img_out
+      
+    ;????????
+    ;这里直接进行波段运算，之后删除该图像？
+    
+  endfor
+  
+  
+end
