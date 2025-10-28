@@ -21,6 +21,11 @@ This project implements a complete pipeline for forest fire detection using:
 
 ## Code Structure
 
+The `3 Experience records/` folder contains complete experimental logs including:
+- Training/validation loss curves
+- Accuracy progression charts
+- Confusion matrices for each configuration
+- Model checkpoints and performance summaries
 
 ```
 ├── 1 data preprocessing/          # Landsat-8 data preparation
@@ -53,6 +58,38 @@ pip install tensorflow gdal opencv-python numpy matplotlib
 1. Prepare data: `python "1 data preprocessing/crop_samples.py"`
 2. Train model: `python "2 Unet_RSimage_Multi-band_Multi-class-master/_4_train_loss&acc.py"`
 3. Test results: `python "2 Unet_RSimage_Multi-band_Multi-class-master/test.py"`
+
+## Dataset and Preprocessing
+
+**Landsat-8 Data:**
+- **Spatial resolution**: 30m
+- **Bands used**: RGB + NIR + SWIR (Bands 4,5,6,7)
+- **Study areas**: US West Coast, Northeast Australia (2015-2021)
+- **Fire events**: 60+ wildfire incidents across 40 satellite images
+
+**Data Processing:**  
+1. Atmospheric correction using FLAASH
+2. Sliding window cropping (512×512 patches)
+3. Automatic fire labeling using spectral indices:
+   - SWIR/NIR ratio thresholds
+   - NDVI for vegetation masking
+   - Statistical outlier detection
+
+Using Landsat-8 OLI data from 2015 to 2021, a three-class dataset (fire, vegetation, background) was created. After atmospheric correction and radiometric calibration, images were cropped into 512×512 patches. Fire pixels were labeled using SWIR/NIR thresholds and contextual checks, while vegetation was determined by NDVI, generating automatic segmentation masks for training and validating DECB weighting to enhance fire pixel recall.
+
+Key formulas:
+```
+NDVI = (NIR - R) / (NIR + R)
+
+Fire pixel criteria (simplified):
+ρ_SWIR > 0.8,  ρ_NIR > 0.4,  ρ_Coastal < 0.2
+```
+
+**Class Distribution:**
+- Fire: 4.52% (severely underrepresented)
+- Vegetation: 16.2%  
+- Background: 79.28%
+
 
 ## The Data Imbalance Problem
 
@@ -98,26 +135,6 @@ Our experiments compare different loss functions across multiple configurations:
 
 **Key Finding**: Focal Loss improves fire detection recall by ~25% while maintaining overall accuracy, crucial for emergency response applications where missing fires is more costly than false alarms.
 
-## Dataset and Preprocessing
-
-**Landsat-8 Data:**
-- **Spatial resolution**: 30m
-- **Bands used**: RGB + NIR + SWIR (Bands 4,5,6,7)
-- **Study areas**: US West Coast, Northeast Australia (2015-2021)
-- **Fire events**: 60+ wildfire incidents across 40 satellite images
-
-**Data Processing:**  
-1. Atmospheric correction using FLAASH
-2. Sliding window cropping (512×512 patches)
-3. Automatic fire labeling using spectral indices:
-   - SWIR/NIR ratio thresholds
-   - NDVI for vegetation masking
-   - Statistical outlier detection
-
-**Class Distribution:**
-- Fire: 2.1% (severely underrepresented)
-- Vegetation: 43.7%  
-- Background: 54.2%
 
 ## Training Configuration
 
@@ -127,13 +144,7 @@ Our experiments compare different loss functions across multiple configurations:
 - **Input size**: 512×512×3
 - **Data split**: 60% train / 40% validation
 
-## Repository Contents
 
-The `3 Experience records/` folder contains complete experimental logs including:
-- Training/validation loss curves
-- Accuracy progression charts
-- Confusion matrices for each configuration
-- Model checkpoints and performance summaries
 
 ## Applications
 
@@ -142,7 +153,3 @@ This work is relevant for:
 - Emergency response planning
 - Climate change impact studies
 - Remote sensing education and research
-
-## Academic Context
-
-Developed as undergraduate thesis project demonstrating practical application of deep learning to real-world environmental monitoring challenges.
