@@ -80,10 +80,14 @@ Method provenance: This automatic labeling strategy is adapted from the threshol
 Using Landsat‑8 OLI data from 2015–2021, a three-class dataset (fire, vegetation, background) was created. After atmospheric correction and radiometric calibration, images were cropped into 512×512 patches. Fire pixels were labeled using SWIR/NIR thresholds with contextual checks, while vegetation was determined by NDVI, generating automatic segmentation masks for training and validating DECB weighting to enhance fire pixel recall.
 
 Key formulas:
-$$ NDVI = (NIR - R) / (NIR + R) $$
+```math
+\mathrm{NDVI} = \frac{NIR - R}{NIR + R}
+```
 
 Fire pixel criteria (simplified):
-$$ ρ_{SWIR} > 0.8,  ρ_{NIR} > 0.4,  ρ_{Coastal} < 0.2 $$
+```math
+\rho_{\mathrm{SWIR}} > 0.8,\quad \rho_{\mathrm{NIR}} > 0.4,\quad \rho_{\mathrm{Coastal}} < 0.2
+```
 
 
 Class Distribution:
