@@ -75,17 +75,18 @@ pip install tensorflow gdal opencv-python numpy matplotlib
    - NDVI for vegetation masking
    - Statistical outlier detection
 
-Using Landsat-8 OLI data from 2015 to 2021, a three-class dataset (fire, vegetation, background) was created. After atmospheric correction and radiometric calibration, images were cropped into 512×512 patches. Fire pixels were labeled using SWIR/NIR thresholds and contextual checks, while vegetation was determined by NDVI, generating automatic segmentation masks for training and validating DECB weighting to enhance fire pixel recall.
+Method provenance: This automatic labeling strategy is adapted from the threshold-based approach in [Active fire detection using Landsat-8/OLI data](https://www.sciencedirect.com/science/article/pii/S0034425715301206?via%3Dihub) (Remote Sensing of Environment, 2015), and tuned for Landsat‑8 OLI.
+
+Using Landsat‑8 OLI data from 2015–2021, a three-class dataset (fire, vegetation, background) was created. After atmospheric correction and radiometric calibration, images were cropped into 512×512 patches. Fire pixels were labeled using SWIR/NIR thresholds with contextual checks, while vegetation was determined by NDVI, generating automatic segmentation masks for training and validating DECB weighting to enhance fire pixel recall.
 
 Key formulas:
-```
-NDVI = (NIR - R) / (NIR + R)
+$$ NDVI = (NIR - R) / (NIR + R) $$
 
 Fire pixel criteria (simplified):
-ρ_SWIR > 0.8,  ρ_NIR > 0.4,  ρ_Coastal < 0.2
-```
+$$ ρ_{SWIR} > 0.8,  ρ_{NIR} > 0.4,  ρ_{Coastal} < 0.2 $$
 
-**Class Distribution:**
+
+Class Distribution:
 - Fire: 4.52% (severely underrepresented)
 - Vegetation: 16.2%  
 - Background: 79.28%
